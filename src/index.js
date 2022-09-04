@@ -6,12 +6,26 @@ import * as ReactDOMClient from 'react-dom/client';
 const inputClick = () => console.log("Clicked")
 const mouseOver = () => console.log("Mouse Over")
 
+//Create new component
+function Header() {
+	return(
+		<header>Шапка сайта</header>
+	)
+}
+
 //Now we will use components.
 //To create new component, you can create new function or class
+//Add component Header in component App
 function App() {//name of function == name of component. 
 	//In fact, it isn't function. It's component(JSX-element)
-	return (<input placeholder='Some text'//React + JSX 
-	onClick={inputClick} onMouseEnter={mouseOver}/>) //React + JSX + два обработчика событий)
+	return (
+	<div>
+	<Header /> 
+	<input placeholder='Some text'//React + JSX 
+	onClick={inputClick} onMouseEnter={mouseOver}//React + JSX + два обработчика событий
+	/>
+	</div>
+	)
 }
 
 const app = ReactDOMClient.createRoot(document.getElementById("app"));//object, we will place all information
