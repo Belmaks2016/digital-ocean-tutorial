@@ -16,7 +16,8 @@ function Header() {
 //Now we will use components.
 //To create new component, you can create new function or class
 //Add component Header in component App
-function App() {//name of function == name of component. 
+//Use arrow function
+const App = () => {//name of function == name of component. 
 	//In fact, it isn't function. It's component(JSX-element)
 	return (
 	<div>
