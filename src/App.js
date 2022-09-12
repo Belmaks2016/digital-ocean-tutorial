@@ -32,3 +32,4 @@ class App extends React.Component {//name of function == name of component.
 }
 
 export default App
+//g
